@@ -5,7 +5,7 @@
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
         <p>
-        	<a href="{{route('allstudents')}}" class="btn btn-info">All Students</a>
+        	<a href="" class="btn btn-info">All Students</a>
         </p>
         <hr>
         <h3>Student Insert</h3>
@@ -18,7 +18,7 @@
 	        </ul>
 	    </div>
 	        @endif
-        <form action="{{route('storestudent')}}" method="POST">
+        <form action="{{url('student')}}" method="POST">
         	@csrf
           <div class="control-group">
             <div class="form-group floating-label-form-group controls">

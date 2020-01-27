@@ -5,7 +5,7 @@
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
         <p>
-        	<a href="{{route('allstudents')}}" class="btn btn-info">All Students</a>
+        	<a href="" class="btn btn-info">All Students</a>
         </p>
         <hr>
         <h3>Student Update</h3>
@@ -18,8 +18,9 @@
 	        </ul>
 	    </div>
 	        @endif
-        <form action="{{url('updatestudent'.$student->id)}}" method="POST">
+        <form action="{{url('student/'.$student->id)}}" method="POST">
         	@csrf
+          @method('PUT')
           <div class="control-group">
             <div class="form-group floating-label-form-group controls">
             	<label>Student Name</label>

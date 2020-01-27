@@ -46,7 +46,7 @@
             <a class="nav-link" href="#">Write Post</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{route('student')}}">Student</a>
+            <a class="nav-link" href="{{url('student')}}">Student</a>
           </li>
         </ul>
       </div>
